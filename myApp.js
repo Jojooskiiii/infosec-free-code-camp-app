@@ -1,9 +1,14 @@
 const express = require('express');
+const helmet = require('helmet');
 const app = express();
 
 
+const PORT = process.env.PORT || 3030;
 
 
+app.listen(PORT, () => {
+  console.log(`⚡️ Papa Kojo Info security App started on Port ${PORT}`);
+});
 
 
 
