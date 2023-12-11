@@ -3,12 +3,7 @@ const helmet = require('helmet');
 const app = express();
 
 
-const PORT = process.env.PORT || 3030;
 
-
-app.listen(PORT, () => {
-  console.log(`⚡️ Papa Kojo Info security App started on Port ${PORT}`);
-});
 
 
 
@@ -62,5 +57,8 @@ app.get("/", function (request, response) {
 });
 let port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Your app is listening on port ${port}`);
+  console.log(`⚡️ Papa Kojo Info security App started on Port ${port}`);
 });
+
+
+
